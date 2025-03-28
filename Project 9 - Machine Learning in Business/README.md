@@ -79,12 +79,18 @@ Use geospatial analysis (with GeoPandas or Folium) to visualize well locations a
 
 ## Documentation
 Datasets
+
 File	Description
+
 geo_data_0.csv	Oil well feature and reserve data for Region 0
+
 geo_data_1.csv	Data for Region 1
+
 geo_data_2.csv	Data for Region 2
+
 All datasets include 3 feature columns (f0, f1, f2) and a product column (barrels of oil expected per well).
 
 ## Author
 Created by Gabe Goodwin
+
 Completed as part of the TripleTen Data Science Program
