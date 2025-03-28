@@ -1,5 +1,5 @@
-### Machine Learning Solutions for Insurance Analytics
-## Project Overview
+## Machine Learning Solutions for Insurance Analytics
+### Project Overview
 This project was developed for Sure Tomorrow, an insurance company exploring how machine learning can optimize business processes. The dataset contains anonymized customer information including age, income, family members, and insurance benefits.
 
 The project is divided into four tasks, each solving a specific business problem using different machine learning techniques:
@@ -12,27 +12,27 @@ Regression to estimate number of benefits a customer may receive
 
 Data Obfuscation to secure personal information while preserving model performance
 
-### Features & Functionality
-## Task 1: Similarity Search (KNN)
+## Features & Functionality
+### Task 1: Similarity Search (KNN)
 Used K-Nearest Neighbors algorithm to find customers similar to a given profile.
 
 Enables personalized marketing outreach and recommendations.
 
-## Task 2: Benefit Eligibility Prediction (Classification)
+### Task 2: Benefit Eligibility Prediction (Classification)
 Implemented and evaluated a Logistic Regression model.
 
 Compared results with a dummy baseline model.
 
 Achieved higher accuracy, precision, and recall, confirming model usefulness.
 
-## Task 3: Predicting Number of Benefits (Regression)
+### Task 3: Predicting Number of Benefits (Regression)
 Built a Linear Regression model to predict insurance_benefits.
 
 Evaluated with MAE and R² scores.
 
 Used real-world interpretation to validate predictions.
 
-## Task 4: Data Masking & Privacy
+### Task 4: Data Masking & Privacy
 Developed a matrix transformation algorithm to obfuscate personal data.
 
 Demonstrated that the model still performs equally well after obfuscation.
