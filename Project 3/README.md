@@ -36,9 +36,6 @@ SciPy for statistical tests
 Jupyter Notebook for documentation and interactivity
 
 ## Requirements
-bash
-Copy
-Edit
 Python >= 3.9
 pandas >= 1.3.0
 matplotlib >= 3.4.0
