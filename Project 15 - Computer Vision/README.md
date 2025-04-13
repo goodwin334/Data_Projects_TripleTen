@@ -1,5 +1,5 @@
 # Age Prediction from Faces
-##Age Prediction for Alcohol Purchase Classification
+Age Prediction for Alcohol Purchase Classification
 
 ## Project Description
 The goal of this project is to predict the age of individuals buying alcohol based on images of their faces. The project leverages neural networks for image classification, with the objective of achieving the highest accuracy in predicting age. This task involves the use of ImageDataGenerator to load images efficiently, given the large size of the dataset.
