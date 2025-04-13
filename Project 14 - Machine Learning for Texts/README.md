@@ -13,41 +13,6 @@ pandas and NumPy for data manipulation.
 Matplotlib and Seaborn for data visualization.
 scikit-learn for machine learning models and evaluation.
 
-## Features & Functionality
-Time Series Resampling: Converted raw 10-minute interval data into hourly time series.
-
-Exploratory Data Analysis (EDA): Identified trends, daily seasonality, and data stationarity using Dickey-Fuller test and plots.
-
-Feature Engineering:
-
-Lag features
-
-Rolling mean windows
-
-Day of week indicators
-
-Model Development:
-
-Baseline Models: Median-based and rolling average models
-
-Statistical Models: AR, ARIMA
-
-Model Evaluation:
-
-Metric: Root Mean Squared Error (RMSE)
-
-Best model: Autoregressive (AR) with an RMSE of ~53.1
-
-Tools Used:
-
-pandas, matplotlib, statsmodels, scikit-learn
-
-## Key Findings
-Taxi demand increases during the week, particularly on Fridays and Mondays.
-
-The time series exhibited stationary behavior despite visual non-stationarity, confirmed via the Dickey-Fuller test.
-
-AR models outperformed other models, but the RMSE of 53.1 narrowly missed the target of 48.
 
 ## System Requirements
 Python version: 3.9+
@@ -65,13 +30,23 @@ scikit-learn>=1.0
 statsmodels>=0.13
 
 ## Roadmap for Improvement
-Fix prediction accuracy using cross-validation: Implement time series cross-validation (TimeSeriesSplit) to better assess overfitting and parameter tuning.
+Increase model performance:
 
-Fix RMSE gap using XGBoost or LSTM: Incorporate modern ML or deep learning models like XGBoost or LSTM to capture nonlinear patterns and improve performance.
+Experiment with advanced models such as Random Forest, XGBoost, or BERT for text classification.
 
-Fix static feature handling using Fourier terms: Add Fourier series features for better modeling of weekly/daily seasonality trends.
+Implement hyperparameter tuning using GridSearchCV or RandomizedSearchCV to optimize the models for better performance.
 
-Fix univariate limitation using weather/holiday data: Incorporate external features like weather, events, or holidays to improve model context awareness.
+Data Augmentation:
+
+Implement text augmentation techniques like paraphrasing or back-translation to increase the dataset size.
+
+Deep Learning:
+
+Train a deep learning model (such as an LSTM or Transformer-based model) for more accurate text classification.
+
+Model Deployment:
+
+Create a simple API using Flask or FastAPI to deploy the model for real-time predictions.
 
 ## Contributors
 Project Author: Gabe Goodwin
