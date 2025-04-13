@@ -1,7 +1,7 @@
 ##Project Name
 Movie Review Classification: Negative Review Detection
 
-##Description
+**##Description**
 This project involves building a model to classify movie reviews as positive or negative. The dataset used comes from IMDB, with polarity labels indicating whether a review is positive or negative. The goal is to develop a model that can automatically detect negative reviews, with an objective of achieving an F1 score of at least 0.85.
 
 The project follows these key steps:
