@@ -1,8 +1,17 @@
-# Time Series Forecasting for Taxi Order Demand
+# Movie Review Classification: Negative Review Detection
 ## Project Overview
-This project builds a time series forecasting model for Sweet Lift Taxi, a company operating airport taxi services. The core objective is to predict the number of taxi orders one hour into the future, helping the company optimize driver availability during peak times.
+This project involves building a model to classify movie reviews as positive or negative. The dataset used comes from IMDB, with polarity labels indicating whether a review is positive or negative. The goal is to develop a model that can automatically detect negative reviews, with an objective of achieving an F1 score of at least 0.85.
+The project follows these key steps:
+Data Preprocessing: Load and clean the dataset to make it suitable for modeling.
+Exploratory Data Analysis (EDA): Analyze the dataset, including the distribution of labels and key features.
+Model Building: Use machine learning models to classify the reviews and compute the F1 score.
+Model Evaluation: Evaluate model performance using metrics like F1 score, precision, recall, and accuracy.
 
-The model was evaluated using Root Mean Squared Error (RMSE) with a target performance threshold of less than 48 RMSE on the test set.
+Tools used:
+Python for data processing and model building.
+pandas and NumPy for data manipulation.
+Matplotlib and Seaborn for data visualization.
+scikit-learn for machine learning models and evaluation.
 
 ## Features & Functionality
 Time Series Resampling: Converted raw 10-minute interval data into hourly time series.
