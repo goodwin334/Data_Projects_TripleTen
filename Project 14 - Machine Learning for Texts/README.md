@@ -1,61 +1,68 @@
-##Project Name
-Movie Review Classification: Negative Review Detection
+# Time Series Forecasting for Taxi Order Demand
+## Project Overview
+This project builds a time series forecasting model for Sweet Lift Taxi, a company operating airport taxi services. The core objective is to predict the number of taxi orders one hour into the future, helping the company optimize driver availability during peak times.
 
-**##Description**
-This project involves building a model to classify movie reviews as positive or negative. The dataset used comes from IMDB, with polarity labels indicating whether a review is positive or negative. The goal is to develop a model that can automatically detect negative reviews, with an objective of achieving an F1 score of at least 0.85.
+The model was evaluated using Root Mean Squared Error (RMSE) with a target performance threshold of less than 48 RMSE on the test set.
 
-The project follows these key steps:
+## Features & Functionality
+Time Series Resampling: Converted raw 10-minute interval data into hourly time series.
 
-Data Preprocessing: Load and clean the dataset to make it suitable for modeling.
+Exploratory Data Analysis (EDA): Identified trends, daily seasonality, and data stationarity using Dickey-Fuller test and plots.
 
-Exploratory Data Analysis (EDA): Analyze the dataset, including the distribution of labels and key features.
+Feature Engineering:
 
-Model Building: Use machine learning models to classify the reviews and compute the F1 score.
+Lag features
 
-Model Evaluation: Evaluate model performance using metrics like F1 score, precision, recall, and accuracy.
+Rolling mean windows
 
-Tools used:
+Day of week indicators
 
-Python for data processing and model building.
+Model Development:
 
-pandas and NumPy for data manipulation.
+Baseline Models: Median-based and rolling average models
 
-Matplotlib and Seaborn for data visualization.
+Statistical Models: AR, ARIMA
 
-scikit-learn for machine learning models and evaluation.
+Model Evaluation:
 
-##System Requirements
-Python 3.x (recommendation: 3.7 or higher)
+Metric: Root Mean Squared Error (RMSE)
 
-pandas >= 1.1.0
+Best model: Autoregressive (AR) with an RMSE of ~53.1
 
-NumPy >= 1.18.0
+Tools Used:
 
-Matplotlib >= 3.0.0
+pandas, matplotlib, statsmodels, scikit-learn
 
-Seaborn >= 0.10.0
+## Key Findings
+Taxi demand increases during the week, particularly on Fridays and Mondays.
 
-scikit-learn >= 0.23.0
+The time series exhibited stationary behavior despite visual non-stationarity, confirmed via the Dickey-Fuller test.
 
-##Roadmap for Improvement
-Increase model performance:
+AR models outperformed other models, but the RMSE of 53.1 narrowly missed the target of 48.
 
-Experiment with advanced models such as Random Forest, XGBoost, or BERT for text classification.
+## System Requirements
+Python version: 3.9+
 
-Implement hyperparameter tuning using GridSearchCV or RandomizedSearchCV to optimize the models for better performance.
+Recommended Libraries:
 
-Data Augmentation:
+pandas>=1.3
 
-Implement text augmentation techniques like paraphrasing or back-translation to increase the dataset size.
+numpy>=1.21
 
-Deep Learning:
+matplotlib>=3.4
 
-Train a deep learning model (such as an LSTM or Transformer-based model) for more accurate text classification.
+scikit-learn>=1.0
 
-Model Deployment:
+statsmodels>=0.13
 
-Create a simple API using Flask or FastAPI to deploy the model for real-time predictions.
+## Roadmap for Improvement
+Fix prediction accuracy using cross-validation: Implement time series cross-validation (TimeSeriesSplit) to better assess overfitting and parameter tuning.
 
-##Contributors
-Gabe Goodwin 
+Fix RMSE gap using XGBoost or LSTM: Incorporate modern ML or deep learning models like XGBoost or LSTM to capture nonlinear patterns and improve performance.
 
+Fix static feature handling using Fourier terms: Add Fourier series features for better modeling of weekly/daily seasonality trends.
+
+Fix univariate limitation using weather/holiday data: Incorporate external features like weather, events, or holidays to improve model context awareness.
+
+## Contributors
+Project Author: Gabe Goodwin
