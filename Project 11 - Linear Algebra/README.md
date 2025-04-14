@@ -76,14 +76,6 @@ Integrate an interactive Streamlit UI for agents to explore customer clusters an
 
 Implement adversarial testing on obfuscated data to validate privacy robustness.
 
-## Documentation
-Column	Description
-gender	Gender of the customer
-age	Age in years
-income	Annual income
-family_members	Number of family members
-insurance_benefits	Number of benefits received
-
 ## Credits
 Created by: Gabe Goodwin
 
