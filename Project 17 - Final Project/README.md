@@ -53,4 +53,5 @@ Deploy the final model as a web service using Streamlit or FastAPI.
 
 ## Contributors
 Author: Gabe Goodwin
+
 Program: TripleTen Data Science Bootcamp
