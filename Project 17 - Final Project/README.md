@@ -35,8 +35,6 @@ The best model achieved a strong performance, which will be further improved wit
 ## System Requirements
 Make sure your environment meets the following requirements:
 
-bash
-Copy
 Python >= 3.6
 pandas >= 1.2.3
 numpy >= 1.19.5
