@@ -42,7 +42,6 @@ pandas >= 1.2.3
 numpy >= 1.19.5
 matplotlib >= 3.4.2
 scikit-learn >= 0.24.2
-Install dependencies with:
 
 ## Roadmap for Improvement
 
